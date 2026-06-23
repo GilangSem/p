@@ -1,3 +1,4 @@
+import '/app/models/transaction.dart';
 import '/app/controllers/home_controller.dart';
 import '/app/models/user.dart';
 import '/app/networking/api_service.dart';
@@ -17,6 +18,11 @@ final Map<Type, dynamic> modelDecoders = {
       List.from(data).map((json) => User.fromJson(json)).toList(),
   //
   User: (data) => User.fromJson(data),
+
+  List<Transaction>: (data) =>
+      List.from(data).map((json) => Transaction.fromJson(json)).toList(),
+
+  Transaction: (data) => Transaction.fromJson(data),
 };
 
 /* API Decoders
