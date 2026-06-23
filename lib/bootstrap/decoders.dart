@@ -25,14 +25,6 @@ final Map<Type, dynamic> modelDecoders = {
   Transaction: (data) => Transaction.fromJson(data),
 };
 
-/* API Decoders
-| -------------------------------------------------------------------------
-| API decoders are used when you need to access an API service using the
-| 'api' helper. E.g. api<MyApiService>((request) => request.fetchData());
-|
-| Learn more https://nylo.dev/docs/7.x/decoders#api-decoders
-|-------------------------------------------------------------------------- */
-
 final Map<Type, dynamic> apiDecoders = {
   ApiService: () => ApiService(),
 
