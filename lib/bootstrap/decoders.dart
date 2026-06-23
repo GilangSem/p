@@ -1,3 +1,4 @@
+import '../app/networking/budget_service.dart';
 import '/app/models/transaction.dart';
 import '/app/controllers/home_controller.dart';
 import '/app/models/user.dart';
@@ -26,13 +27,12 @@ final Map<Type, dynamic> modelDecoders = {
 };
 
 final Map<Type, dynamic> apiDecoders = {
-  ApiService: () => ApiService(),
-
-  // ...
+  ApiService: ApiService(),
+  BudgetService: BudgetService(), // ← add this line
 };
 
 /* Controller Decoders
-| -------------------------------------------------------------------------
+-------------------------------------------------------------------------
 | Controller are used in pages.
 |
 | Learn more https://nylo.dev/docs/7.x/controllers
