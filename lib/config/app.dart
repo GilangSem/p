@@ -1,4 +1,5 @@
 import 'package:nylo_framework/nylo_framework.dart';
+import 'package:nylo_framework/nylo_framework.dart'
 
 /* App
 |--------------------------------------------------------------------------
